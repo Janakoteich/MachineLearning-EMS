@@ -1,5 +1,6 @@
 # MachineLearning-EMS-
 Face Recognition-Speech Recognition-Voice Recognition
+(This project is done as a senior project for Bachelor's degree by the team: Heba Ibrahim, Jana Koteich, Rima Hasan).
 
 This project is based on pretrained models for voice recognition and face recognition
  1)https://github.com/linhdvu14/vggvox-speaker-identification
