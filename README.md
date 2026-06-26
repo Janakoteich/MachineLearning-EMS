@@ -1,5 +1,9 @@
 # EMS — Embedded Manhunt System
 
+<p align="center">
+  <img src="images/ems.jpg" alt="EMS Logo" width="300"/>
+</p>
+
 > A multimodal AI identification system combining face recognition, voice recognition, and speech recognition, with a custom PyQt5 GUI and sound effects.
 
 **Bachelor's Senior Project** — Heba Ibrahim · Jana Koteich · Rima Hasan
