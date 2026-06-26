@@ -1,16 +1,5 @@
 # EMS — Embedded Manhunt System
-
-<table>
-  <tr>
-    <td><img src="images/ems.jpg" alt="EMS Logo" width="200"/></td>
-    <td>
-      <h1>EMS — Embedded Manhunt System</h1>
-      <p>A multimodal AI identification system combining face recognition, voice recognition, and speech recognition, with a custom PyQt5 GUI and sound effects.</p>
-      <p><strong>Bachelor's Senior Project</strong> — Heba Ibrahim · Jana Koteich · Rima Hasan</p>
-    </td>
-  </tr>
-</table>
-
+<img src="images/ems.jpj" alt="EMS Logo" width="200" align="right"/>
 > A multimodal AI identification system combining face recognition, voice recognition, and speech recognition, with a custom PyQt5 GUI and sound effects.
 
 **Bachelor's Senior Project** — Heba Ibrahim · Jana Koteich · Rima Hasan
