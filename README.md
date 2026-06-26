@@ -1,34 +1,130 @@
-# MachineLearning-EMS-
-Face Recognition-Speech Recognition-Voice Recognition
-(This project is done as a senior project for Bachelor's degree by the team: Heba Ibrahim, Jana Koteich, Rima Hasan).
+# EMS — Embedded Manhunt System
 
-This project is based on pretrained models for voice recognition and face recognition
- 1)https://github.com/linhdvu14/vggvox-speaker-identification
- 2)https://github.com/ageitgey/face_recognition
- 
-Introduction:
-This project is a combination of face recognition, voice recognition and speech recognition. In addition
-of GUI that support them and sound effects
+> A multimodal AI identification system combining face recognition, voice recognition, and speech recognition, with a custom PyQt5 GUI and sound effects.
 
-Installation:
-Requirements:
- Python 3.7
- Windows (anaconda)
-Installing on windows:
-Make sure that all the following libraries are installed:
-1. Face recognition libraries:
-opencv,sqlite3,numpy ,face_recognition
-2. Voice recognition:
-Tensorflow, keras ,gTTs,
-3. Speech recognition:
-speech_recognition ,PyAudio
+**Bachelor's Senior Project** — Heba Ibrahim · Jana Koteich · Rima Hasan
 
-This project saves data in sqlite3 so make sure you install sqlite3
-Also to add the effect of sounds install playsound
-and don’t forget to install PyQt5 for the GUI.
+---
 
-Instructions:
-To run evaluation run python first.py
-Modify `cfg/enroll_list.csv` and `cfg/test_list.csv` to point to your local enroll/test wav files
-Sounds and images files related to the gui, if you want to change them modify these files and don’t
-forget to modify them in the code also
+## Overview
+
+EMS is a Python-based identification pipeline that authenticates users through three complementary modalities:
+
+- **Face Recognition** — real-time identification via webcam using pretrained deep learning models
+- **Voice Recognition** — speaker identification from audio input using VGGVox embeddings
+- **Speech Recognition** — spoken command processing via Google Speech API
+- **GUI** — a PyQt5 desktop interface with voice login, animated waveform display, and themed sound effects
+
+User data (enrolled identities) is persisted in a local SQLite3 database.
+
+---
+
+## Architecture & Credits
+
+This project builds on two open-source pretrained models:
+
+| Component | Source |
+|---|---|
+| Voice / Speaker Recognition | [vggvox-speaker-identification](https://github.com/linhdvu14/vggvox-speaker-identification) |
+| Face Recognition | [face_recognition (ageitgey)](https://github.com/ageitgey/face_recognition) |
+
+---
+
+## Requirements
+
+- Python 3.7
+- Windows with [Anaconda](https://www.anaconda.com/)
+
+### Dependencies
+
+**Face Recognition**
+```
+opencv-python
+numpy
+face_recognition
+sqlite3  (standard library)
+```
+
+**Voice Recognition**
+```
+tensorflow
+keras
+gTTS
+```
+
+**Speech Recognition**
+```
+SpeechRecognition
+PyAudio
+```
+
+**GUI & Utilities**
+```
+PyQt5
+playsound
+```
+
+> **Note:** SQLite3 is included in Python's standard library but must be available in your environment.
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/Janakoteich/MachineLearning-EMS.git
+cd MachineLearning-EMS
+pip install opencv-python numpy face_recognition tensorflow keras gTTS SpeechRecognition PyAudio PyQt5 playsound
+```
+
+---
+
+## Usage
+
+### Run the application
+
+```bash
+python first.py
+```
+
+### Enroll new users (voice)
+
+Edit the CSV config files to point to your local `.wav` files:
+
+- `cfg/enroll_list.csv` — audio files for enrollment
+- `cfg/test_list.csv` — audio files for evaluation/testing
+
+### Customize GUI assets
+
+Sound effects and images are in `sounds/` and `images/`. To replace them, swap the files and update the corresponding paths in the source code.
+
+---
+
+## Project Structure
+
+```
+MachineLearning-EMS/
+├── cfg/                  # Enrollment and test configuration files
+├── data/                 # Data directory
+├── images/               # GUI image assets
+├── sounds/               # GUI sound effects
+├── first.py              # Entry point — launches the application
+├── ems3.py               # Core EMS logic
+├── model.py              # VGGVox model definition
+├── face_adding.py        # Face enrollment utility
+├── wav_reader.py         # Audio preprocessing
+├── sigproc.py            # Signal processing utilities
+├── constants.py          # Configuration constants
+└── database2-1.db        # SQLite3 identity database
+```
+
+---
+
+## Team
+
+| Name | Role |
+|---|---|
+| Heba Ibrahim | Co-developer |
+| Jana Koteich | Co-developer |
+| Rima Hasan | Co-developer |
+
+*Submitted as a Bachelor's senior project.*
