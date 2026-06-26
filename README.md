@@ -1,5 +1,5 @@
 # EMS — Embedded Manhunt System
-<img src="images/ems.jpg" alt="EMS Logo" width="200" align="right"/>
+<img src="images/ems.jpg" alt="EMS Logo" width="250" align="right"/>
 
 > A multimodal AI identification system combining face recognition, voice recognition, and speech recognition, with a custom PyQt5 GUI and sound effects.
 
